@@ -1,0 +1,13 @@
+body {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_cadastro {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
