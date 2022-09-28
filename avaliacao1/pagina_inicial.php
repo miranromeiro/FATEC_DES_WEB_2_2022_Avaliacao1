@@ -19,14 +19,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body>
     <div class="page-header">
-        <h1>Olá, <b><?php echo htmlspecialchars($_SESSION["username"]); ?>
-        <br>
-        </b>.Benvindo ao site.</h1>
+        <h1>Invocador: <b><?php echo htmlspecialchars($_SESSION["username"]); ?>
     </div>
     <p>
-        <a href="cadastro.php" class="btn btn-primary">Cadastro Pessoas</a>
+        <a href="cadastro.php">Cadastrar personagem</a>
         <br><br>
-        <a href="logout.php" class="btn btn-danger">Sair da conta</a>
+        <a href="logout.php">Logout</a>
     </p>
 </body>
 </html>
