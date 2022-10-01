@@ -24,6 +24,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="cadastro.php">Cadastrar personagem</a>
         <br><br>
+        <a href="cadastros.txt">Lista de personagens</a>
+        <br><br>
         <a href="logout.php">Logout</a>
     </p>
 </body>
