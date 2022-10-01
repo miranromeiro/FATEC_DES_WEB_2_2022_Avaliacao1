@@ -24,7 +24,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="cadastro.php">Cadastrar personagem</a>
         <br><br>
-        <a href="cadastros.txt">Lista de personagens</a>
+        <a href="cadastros.txt">Lista de personagens
+            <?php
+                if (session_status() === '') {
+                    header("location: login.php");
+                }
+            ?>
+        </a>
         <br><br>
         <a href="logout.php">Logout</a>
     </p>
